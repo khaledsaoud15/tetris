@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #dadada;
+}
+
+.grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  box-shadow: 16px 16px 31px #bebebe, -16px -16px 31px #ffffff;
+}
+
+.mini-grid {
+  width: 80px;
+  height: 80px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.mini-grid div {
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  all: unset;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  padding: 15px 30px;
+  background: #ff8888;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fa6767;
+}
+
+h3 {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+}
+
+.keys {
+  background: #fff;
+  width: 200px;
+  padding: 10px;
+}
+
+p {
+  margin: 10px 0;
+  font-weight: 400;
+}
+p span {
+  font-weight: 700;
+  color: #3a3aff;
+}
